@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230522104144">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230523000550">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,14 +24,14 @@
 					<div class="header__menu menu">
 						<nav class="menu__body">
 							<ul class="menu__list">
-								<li class="menu__item"><a href="" class="menu__link">Home</a></li>
-								<li class="menu__item"><a href="" class="menu__link">About</a></li>
-								<li class="menu__item"><a href="" class="menu__link">Services</a></li>
-								<li class="menu__item"><a href="" class="menu__link">Portfolio</a></li>
-								<li class="menu__item"><a href="" class="menu__link">Resume</a></li>
-								<li class="menu__item"><a href="" class="menu__link">Client</a></li>
-								<li class="menu__item"><a href="" class="menu__link">Blog</a></li>
-								<li class="menu__item"><a href="" class="menu__link">Contact</a></li>
+								<li class="menu__item"><a href="#" data-goto=".page__main.main-page" data-goto-speed="1500" class="menu__link">Home</a></li>
+								<li class="menu__item"><a href="#" data-goto=".page__about.about" data-goto-speed="1500" class="menu__link">About</a></li>
+								<li class="menu__item"><a href="#" data-goto=".page__services.services" data-goto-speed="1500" class="menu__link">Services</a></li>
+								<li class="menu__item"><a href="#" data-goto=".page__portfolio.portfolio" data-goto-speed="1500" class="menu__link">Portfolio</a></li>
+								<li class="menu__item"><a href="#" data-goto=".page__resume.resume" data-goto-speed="1500" class="menu__link">Resume</a></li>
+								<li class="menu__item"><a href="#" data-goto=".page__testimonial.testimonial" data-goto-speed="1500" class="menu__link">Client</a></li>
+								<li class="menu__item"><a href="#" data-goto=".page__blog.blog" data-goto-speed="1500" class="menu__link">Blog</a></li>
+								<li class="menu__item"><a href="#" data-goto=".page__contact.contact" data-goto-speed="1500" class="menu__link">Contact</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -40,10 +40,11 @@
 						<button type="button" class="menu__icon icon-menu"><span></span></button>
 					</div>
 				</div>
+				<button class="ancohr"></button>
 			</div>
 		</header>
 		<main class="page">
-			<section class="page__main main-page">
+			<section data-watch="navigator" class="page__main main-page">
 				<div class="main-page__container">
 					<div class="main-page__hero">
 						<picture><source srcset="img/main-page/01.webp" type="image/webp"><img src="img/main-page/01.png" alt="Image"></picture>
@@ -64,7 +65,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__about about">
+			<section data-watch="navigator" class="page__about about">
 				<div class="about__container">
 					<div class="decor-about__body decor-about__body_1">
 						<div class="decor-about__image">
@@ -80,7 +81,7 @@
 					</div>
 					<div class="about__media">
 						<div class="about__image-ibg">
-							<picture><source srcset="img/about-me/01.webp" type="image/webp"><img src="img/about-me/01.jpg" alt="Image"></picture>
+							<picture><source srcset="img/about-me/06.webp" type="image/webp"><img src="img/about-me/06.jpg" alt="Image"></picture>
 						</div>
 					</div>
 					<div class="about__info">
@@ -168,7 +169,7 @@
 				</div>
 
 			</section>
-			<section class="page__services services">
+			<section data-watch="navigator" class="page__services services">
 				<div class="services__container">
 					<div class="services__description">
 						<div class="services__label label">Services</div>
@@ -262,7 +263,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__portfolio portfolio">
+			<section data-watch="navigator" class="page__portfolio portfolio">
 				<div class="portfolio__container">
 					<div class="portfolio__title-block">
 						<div class="portfolio__label label">Portfolio</div>
@@ -285,7 +286,7 @@
 
 				</div>
 			</section>
-			<section class="page__resume resume">
+			<section data-watch="navigator" class="page__resume resume">
 				<div class="resume__container">
 					<div class="resume__title-block">
 						<div class="resume__label label">Resume</div>
@@ -396,7 +397,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__testimonial testimonial">
+			<section data-watch="navigator" class="page__testimonial testimonial">
 				<div class="testimonial__container">
 					<div class="testimonial__title-block">
 						<div class="testimonial__label label">Testimonial</div>
@@ -414,9 +415,6 @@
 									</div>
 									<h3 class="slide-testimonial__name">Sahjahan Sagor.</h3>
 									<div class="slide-testimonial__position">Co Founder</div>
-									<!-- <div class="slide-testimonial__barquote">
-										<img src="img/icons/barquote.svg" alt="Image">
-									</div> -->
 									<div class="slide-testimonial__response">
 										<p>
 											Conveniently customize and proactive web services
@@ -434,9 +432,6 @@
 									</div>
 									<h3 class="slide-testimonial__name">Sahjahan Sagor.</h3>
 									<div class="slide-testimonial__position">Co Founder</div>
-									<!-- <div class="slide-testimonial__barquote">
-										<img src="img/icons/barquote.svg" alt="Image">
-									</div> -->
 									<div class="slide-testimonial__response">
 										<p>
 											Conveniently customize and proactive web services
@@ -454,9 +449,6 @@
 									</div>
 									<h3 class="slide-testimonial__name">Sahjahan Sagor.</h3>
 									<div class="slide-testimonial__position">Co Founder</div>
-									<!-- <div class="slide-testimonial__barquote">
-										<img src="img/icons/barquote.svg" alt="Image">
-									</div> -->
 									<div class="slide-testimonial__response">
 										<p>
 											Conveniently customize and proactive web services
@@ -474,9 +466,6 @@
 									</div>
 									<h3 class="slide-testimonial__name">Sahjahan Sagor.</h3>
 									<div class="slide-testimonial__position">Co Founder</div>
-									<!-- <div class="slide-testimonial__barquote">
-										<img src="img/icons/barquote.svg" alt="Image">
-									</div> -->
 									<div class="slide-testimonial__response">
 										<p>
 											Conveniently customize and proactive web services
@@ -487,10 +476,90 @@
 								</div>
 							</div>
 						</div>
-						<!-- Если нужна пагинация -->
 						<div class="swiper-pagination"></div>
-
 					</div>
+				</div>
+			</section>
+			<section data-watch="navigator" class="page__blog blog">
+				<div class="blog__container">
+					<div class="blog__title-block">
+						<div class="blog__label label">Blog post</div>
+						<div class="blog__title title">Our Latest Blog</div>
+					</div>
+					<div class="blog__cards cards">
+						<div class="cards__body">
+							<a href="#" class="cards__image">
+								<picture><source srcset="img/blog/01.webp" type="image/webp"><img src="img/blog/01.jpg" alt="Image"></picture>
+							</a>
+							<div class="cards__label label">Photo Edit</div>
+							<a href="#" class="cards__title">How to Edit My Photography. </a>
+							<div class="cards__text">
+								<p>Conveniently innovate web services user-centric before progressive architect
+									distinctively.</p>
+							</div>
+							<div class="cards__admin">
+								<div class="cards__image-small">
+									<picture><source srcset="img/blog/04.webp" type="image/webp"><img src="img/blog/04.jpg" alt="Image"></picture>
+								</div>
+								<div class="cards__author">
+									<div class="cards__name">Sahjahan Sagor.</div>
+									<div class="cards__period">Just now</div>
+								</div>
+							</div>
+						</div>
+						<div class="cards__body">
+							<a href="#" class="cards__image">
+								<picture><source srcset="img/blog/02.webp" type="image/webp"><img src="img/blog/02.jpg" alt="Image"></picture>
+							</a>
+							<div class="cards__label label">Photo Edit</div>
+							<a href="#" class="cards__title">How to Edit My Photography. </a>
+							<div class="cards__text">
+								<p>Conveniently innovate web services user-centric before progressive architect
+									distinctively.</p>
+							</div>
+							<div class="cards__admin">
+								<div class="cards__image-small">
+									<picture><source srcset="img/blog/04.webp" type="image/webp"><img src="img/blog/04.jpg" alt="Image"></picture>
+								</div>
+								<div class="cards__author">
+									<div class="cards__name">Sahjahan Sagor.</div>
+									<div class="cards__period">Just now</div>
+								</div>
+							</div>
+						</div>
+						<div class="cards__body">
+							<a href="#" class="cards__image">
+								<picture><source srcset="img/blog/03.webp" type="image/webp"><img src="img/blog/03.jpg" alt="Image"></picture>
+							</a>
+							<div class="cards__label label">Photo Edit</div>
+							<a href="#" class="cards__title">How to Edit My Photography. </a>
+							<div class="cards__text">
+								<p>Conveniently innovate web services user-centric before progressive architect
+									distinctively.</p>
+							</div>
+							<div class="cards__admin">
+								<div class="cards__image-small">
+									<picture><source srcset="img/blog/04.webp" type="image/webp"><img src="img/blog/04.jpg" alt="Image"></picture>
+								</div>
+								<div class="cards__author">
+									<div class="cards__name">Sahjahan Sagor.</div>
+									<div class="cards__period">Just now</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__contact contact">
+				<div class="contact__container">
+					<div class="contact__title title-block">
+						<div class="contact__label label">Contact</div>
+						<div class="contact__title title">Get in Touch</div>
+					</div>
+					<form action="" class="contact__form">
+						<div class="contact__map"></div>
+						<div class="contact__info"></div>
+					</form>
 				</div>
 			</section>
 		</main>
@@ -545,7 +614,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230522104144"></script>
+	<script src="js/app.min.js?_v=20230523000550"></script>
 </body>
 
 </html>
