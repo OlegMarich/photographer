@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230523000550">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230612225638">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -550,16 +550,51 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__contact contact">
+			<section data-watch="navigator" class="page__contact contact">
 				<div class="contact__container">
 					<div class="contact__title title-block">
 						<div class="contact__label label">Contact</div>
 						<div class="contact__title title">Get in Touch</div>
 					</div>
-					<form action="" class="contact__form">
-						<div class="contact__map"></div>
-						<div class="contact__info"></div>
-					</form>
+					<div class="contact__items">
+						<div class="contact__map map">
+							<div class="map__boby">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d158857.839904276!2d-0.2664032!3d51.5287398!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487603438b65db49%3A0x9e78421a085a6f2d!2z0KLQsNGD0LXRgNGB0YzQutC40Lkg0LzRltGB0YI!5e0!3m2!1suk!2shu!4v1686556313492!5m2!1suk!2shu" width="" height="" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</div>
+						</div>
+						<div class="contact__info info">
+							<div class="info__data">
+								<div class="info__item">
+									<img class="info__image" src="img/contact/01.svg" alt="Image">
+									<h4 class="info__title">Phone number</h4>
+									<p><a href="tel:801284593" class="info__phone">+8801284593, 01239-420007
+											02-9611936</a></p>
+								</div>
+								<div class="info__item">
+									<img class="info__image" src="img/contact/02.svg" alt="Image">
+									<h4 class="info__title">Address</h4>
+									<p><a href="#" class="info__address">245 King Street, Touterie Victoria
+											8520 Australia</a></p>
+								</div>
+							</div>
+							<form class="form__body" action="files/sendmail/sendmail.php" method="POST">
+								<div class="form__name">
+									<div class="form__line">
+										<input type="text" name="form[name]" data-error="Error" placeholder="Your Name" class="input">
+									</div>
+									<div class="form__line">
+										<input type="text" name="form[email]" data-error="Error" placeholder="E-mail" class="input">
+									</div>
+								</div>
+								<div class="form__line">
+									<textarea autocomplete="off" name="form[messege]" placeholder="Your message" class="input"></textarea>
+								</div>
+								<div class="form__button">
+									<button type="submit" class="button">Submit message</button>
+								</div>
+							</form>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>
@@ -575,29 +610,21 @@
 							<button type="button" class="menu-footer__swiper-button-prev _icon-arrow"></button>
 							<div class="menu-footer__slider swiper">
 								<ul class="menu-footer__wrapper swiper-wrapper">
-									<li class="menu-footer__slide swiper-slide">
-										<a href="" class="menu-footer__link">Home</a>
+									<li class="menu-footer__slide swiper-slide"><a href="#" data-goto=".page__main.main-page" data-goto-speed="1500" class="menu__link">Home</a>
 									</li>
-									<li class="menu-footer__slide swiper-slide">
-										<a href="" class="menu-footer__link">About</a>
+									<li class="menu-footer__slide swiper-slide"><a href="#" data-goto=".page__about.about" data-goto-speed="1500" class="menu-footer__link">About</a>
 									</li>
-									<li class="menu-footer__slide swiper-slide">
-										<a href="" class="menu-footer__link">Services</a>
+									<li class="menu-footer__slide swiper-slide"><a href="#" data-goto=".page__services.services" data-goto-speed="1500" class="menu-footer__link">Services</a>
 									</li>
-									<li class="menu-footer__slide swiper-slide">
-										<a href="" class="menu-footer__link">Portfolio</a>
+									<li class="menu-footer__slide swiper-slide"><a href="#" data-goto=".page__portfolio.portfolio" data-goto-speed="1500" class="menu-footer__link">Portfolio</a>
 									</li>
-									<li class="menu-footer__slide swiper-slide">
-										<a href="" class="menu-footer__link">Resume</a>
+									<li class="menu-footer__slide swiper-slide"><a href="#" data-goto=".page__resume.resume" data-goto-speed="1500" class="menu-footer__link">Resume</a>
 									</li>
-									<li class="menu-footer__slide swiper-slide">
-										<a href="" class="menu-footer__link">Client</a>
+									<li class="menu-footer__slide swiper-slide"><a href="#" data-goto=".page__testimonial.testimonial" data-goto-speed="1500" class="menu-footer__link">Client</a>
 									</li>
-									<li class="menu-footer__slide swiper-slide">
-										<a href="" class="menu-footer__link">Blog</a>
+									<li class="menu-footer__slide swiper-slide"><a href="#" data-goto=".page__blog.blog" data-goto-speed="1500" class="menu-footer__link">Blog</a>
 									</li>
-									<li class="menu-footer__slide swiper-slide">
-										<a href="" class="menu-footer__link">Contact</a>
+									<li class="menu-footer__slide swiper-slide"><a href="#" data-goto=".page__contact.contact" data-goto-speed="1500" class="menu-footer__link">Contact</a>
 									</li>
 								</ul>
 							</div>
@@ -605,16 +632,16 @@
 						</nav>
 					</div>
 					<div class="footer__link">
-						<a href="" class="footer__social-button social-button social-button_round _icon-dribble"></a>
-						<a href="" class="footer__social-button social-button social-button_round _icon-linkedin"></a>
-						<a href="" class="footer__social-button social-button social-button_round _icon-instagram"></a>
-						<a href="" class="footer__social-button social-button social-button_round _icon-behance"></a>
+						<a href="#" class="footer__social-button social-button social-button_round _icon-dribble"></a>
+						<a href="#" class="footer__social-button social-button social-button_round _icon-linkedin"></a>
+						<a href="#" class="footer__social-button social-button social-button_round _icon-instagram"></a>
+						<a href="#" class="footer__social-button social-button social-button_round _icon-behance"></a>
 					</div>
 				</div>
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230523000550"></script>
+	<script src="js/app.min.js?_v=20230612225638"></script>
 </body>
 
 </html>
