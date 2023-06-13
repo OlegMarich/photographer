@@ -469,6 +469,8 @@ textarea.input {
   display: -ms-flexbox;
   display: flex;
   gap: 1.25rem;
+  position: relative;
+  z-index: 5;
 }
 
 .menu-footer__slide {
@@ -487,9 +489,27 @@ textarea.input {
 .menu-footer__swiper-button-prev {
   font-size: 1.125rem;
   padding-right: 0.625rem;
-  border-radius: 0 8px 8px 0;
   color: #FFB400;
   display: none;
+  position: relative;
+}
+
+.menu-footer__swiper-button-prev::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 300%;
+  height: 200%;
+  top: -50%;
+  left: 5%;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  border-radius: 0rem 3.125rem 3.125rem 0rem;
+  background: rgb(31, 34, 53);
+  background: -webkit-gradient(linear, left top, right top, color-stop(29%, rgba(31, 34, 53, 0.815)), to(rgb(14, 24, 34)));
+  background: -o-linear-gradient(left, rgba(31, 34, 53, 0.815) 29%, rgb(14, 24, 34) 100%);
+  background: linear-gradient(90deg, rgba(31, 34, 53, 0.815) 29%, rgb(14, 24, 34) 100%);
 }
 
 .menu-footer__swiper-button-next {
@@ -499,6 +519,25 @@ textarea.input {
   padding-right: 0.625rem;
   color: #FFB400;
   display: none;
+  position: relative;
+}
+
+.menu-footer__swiper-button-next::after {
+  content: "";
+  position: absolute;
+  z-index: -5;
+  width: 300%;
+  height: 200%;
+  top: -50%;
+  left: 5%;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  border-radius: 0rem 3.125rem 3.125rem 0rem;
+  background: rgb(31, 34, 53);
+  background: -webkit-gradient(linear, left top, right top, color-stop(29%, rgba(31, 34, 53, 0.815)), to(rgb(14, 24, 34)));
+  background: -o-linear-gradient(left, rgba(31, 34, 53, 0.815) 29%, rgb(14, 24, 34) 100%);
+  background: linear-gradient(90deg, rgba(31, 34, 53, 0.815) 29%, rgb(14, 24, 34) 100%);
 }
 
 .main-page {
@@ -2221,6 +2260,10 @@ textarea.input {
     -ms-grid-columns: auto;
     grid-template-columns: auto;
   }
+
+  .map__boby iframe {
+    width: 62rem;
+  }
 }
 
 @media (max-width: 53.75em) {
@@ -2369,10 +2412,6 @@ textarea.input {
   .slide-testimonial__body {
     max-width: 26.5rem;
     margin-right: 1.25rem;
-  }
-
-  .map__boby iframe {
-    width: 46.5625rem;
   }
 }
 
